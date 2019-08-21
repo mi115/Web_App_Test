@@ -1,20 +1,42 @@
 {% extends 'shared/_layout.html' %}
 {% block main_content %}
-    <h1>Open Traffic Data Project</h1>
 
-    <h2>Packages</h2>
+    <div class="hero">
+        <h1>Find, install and publish Python packages with the Python Package Index </h1>
 
-    {% for p in packages %}
+        <input type="text" placeholder=" Search projects" class="form-control">
 
-        <div>
-    <span class="title">
-        {{ p.name }}
-    </span>
-            <span class="version">
-        {{ p.version }}
-    </span>
+        or <a href="#">browse projects</a>
+    </div>
+
+    <div class="pypi-stats">
+        <div class="stat">-1 projects</div>
+        <div class="stat">-1 release</div>
+        <div class="stat">-1 users</div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+                <h2>New releases</h2>
+
+                <div>Hot off the press: the newest project releases</div>
+
+                {% for p in packages %}
+
+                <div class="project">
+                    <div class="title">
+                        <a href="#">PROJ</a>
+                        <div class="desc">DESC</div>
+                    </div>
+                </div>
+                {%  endfor %}
+
+            </div>
+            <div class="col-md-2"></div>
         </div>
-
-    {% endfor %}
+    </div>
 
 {% endblock %}
