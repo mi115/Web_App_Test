@@ -1,27 +1,104 @@
 body {
     color: #222;
-    background: #fff;
     margin: 0px;
     padding: 0px;
-}
-
-.title {
-    font-weight: bold;
+    font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    background-color: #ececec;
 }
 
 .main_content {
-    padding: 0px;
+    background: #fff;
     margin: 0px;
+    padding: 0px 0px 50px;
+    border-bottom: 1px solid #d3d3d3;
 }
 
-nav {
-    background-color: #000;
-    padding: 20px;
+.hero {
+    background-color: #de366a;
+    color: white;
+    font-size: 14px;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    color: white;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.hero-inner {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.hero-inner input {
+    border-radius: 2px;
+}
+
+.pypi-stats {
+    padding: 10px 0px;
+    background-color: #ececec;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    margin-bottom: 30px;
+}
+
+.pypi-stats .stat {
+    display: inline-block;
+    min-width: 170px;
+    padding: 10px;
+    font-size: 16px;
+    color: #de366a;
+}
+
+.project-list .subtitle {
+    font-style: italic;
+}
+
+.project-list h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-list .project {
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    background-color: #ececec;
+    min-height: 45px;
+    margin-top: 15px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.project-list .project .title {
     font-size: 20px;
-    color: white;
+
 }
 
-nav > a {
-    color: white;
-    margin-right: 10px;
+.project-list .project a {
+    color: #006dad;
+}
+
+.project-list .project .desc {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    background-color: #ececec;
+    color: #de366a;
 }

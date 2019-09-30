@@ -2,8 +2,14 @@
   <dictionary name="Matisiononon">
     <words>
       <w>endfor</w>
+      <w>jtqu</w>
+      <w>navbar</w>
       <w>passlib</w>
       <w>sqlalchemy</w>
+      <w>tablename</w>
+      <w>toggler</w>
+      <w>toogle</w>
+      <w>xipma</w>
     </words>
   </dictionary>
 </component>
