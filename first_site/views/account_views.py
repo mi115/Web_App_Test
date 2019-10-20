@@ -1,6 +1,6 @@
 import flask
 
-from first_site.Infrastructure.view_modifiers import response
+from first_site.infrastructure.view_modifiers import response
 
 blueprint = flask.Blueprint('account', __name__, template_folder='templates')
 

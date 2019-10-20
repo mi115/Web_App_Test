@@ -1,12 +1,26 @@
 import flask
 
+from first_site.infrastructure.view_modifiers import response
+import first_site.services.package_service as package_service
+
 blueprint = flask.Blueprint('packages', __name__, template_folder='templates')
 
 
 @blueprint.route('/project/<package_name>')
 # @response(template_file="packages/details.html")
 def package_details(package_name: str):
-    return 'Package details for {}'.format(package_name)
+    if not package_name:
+        return flask.abort(status=404)
+
+    package = package_service.get_package_by_id(package_name.strip().lower())
+    if not package:
+        return flask.abort(status=404)
+
+    latest_version = '0.0.0'
+    latest_release = None
+    is_latest = True
+
+    return 'Package details for {}'.format(package.id)
 
 
 @blueprint.route('/<int:rank>')

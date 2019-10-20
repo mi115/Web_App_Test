@@ -12,8 +12,8 @@ import first_site.data.licenses
 # noinspection PyUnresolvedReferences
 import first_site.data.maintainers
 # noinspection PyUnresolvedReferences
-import first_site.data.project
-# noinspection PyUnresolvedReferences
 import first_site.data.releases
+# noinspection PyUnresolvedReferences
+import first_site.data.package
 # noinspection PyUnresolvedReferences
 import first_site.data.users
