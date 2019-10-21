@@ -39,6 +39,7 @@ def get_package_by_id(package_id: str) -> Optional[Package]:
     session = db_session.create_session()
 
     package = session.query(Package)\
+        .options(sqlalchemy.orm.joinedload(Package.releases))\
         .filter(Package.id == package_id)\
         .first()
 
