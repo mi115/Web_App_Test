@@ -4,6 +4,8 @@
 # are all loaded.
 
 # noinspection PyUnresolvedReferences
+import first_site.data.audit
+# noinspection PyUnresolvedReferences
 import first_site.data.downloads
 # noinspection PyUnresolvedReferences
 import first_site.data.languages
