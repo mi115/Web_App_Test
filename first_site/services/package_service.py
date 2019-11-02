@@ -1,6 +1,8 @@
 from typing import Optional
 from typing import List
 import sqlalchemy.orm
+from sqlalchemy.orm import Session
+
 import first_site.data.db_session as db_session
 from first_site.data.package import Package
 from first_site.data.releases import Release
@@ -46,3 +48,11 @@ def get_package_by_id(package_id: str) -> Optional[Package]:
     session.close()
 
     return package
+
+
+def all_packages(limit: int) -> List[Package]:
+    session: Session = db_session.create_session()
+    try:
+        return list(session.query(Package).limit(limit))
+    finally:
+        session.close()
