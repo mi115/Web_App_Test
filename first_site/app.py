@@ -1,7 +1,7 @@
 import os
 import sys
 import flask
-import first_site.data.db_session as db_session
+import data.db_session as db_session
 
 
 folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))

@@ -35,8 +35,8 @@ git config --global user.name "Your name"
 mkdir /apps
 chmod 777 /apps
 mkdir /apps/logs
-mkdir /apps/logs/pypi
-mkdir /apps/logs/pypi/app_log
+mkdir /apps/logs/first_site
+mkdir /apps/logs/first_site/app_log
 cd /apps
 
 # Create a virtual env for the app.
