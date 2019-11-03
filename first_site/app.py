@@ -1,11 +1,14 @@
 import os
 import sys
 import flask
-import data.db_session as db_session
-
 
 folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, folder)
+
+import first_site.data.db_session as db_session
+
+
+
 
 app = flask.Flask(__name__)
 
