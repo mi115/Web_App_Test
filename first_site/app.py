@@ -1,7 +1,7 @@
 import os
 import sys
 import flask
-
+import data.db_session as db_session
 
 
 folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -27,7 +27,7 @@ def configure():
 
 
 def setup_db():
-    import data.db_session as db_session
+
     db_file = os.path.join(
         os.path.dirname(__file__),
         'db',
