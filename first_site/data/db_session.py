@@ -1,9 +1,11 @@
 import sqlalchemy as sa
 import sqlalchemy.orm as orm
 from sqlalchemy.orm import Session
+import os
 
 from first_site.data.modelbase import SqlAlchemyBase
-
+folder = os.path.abspath((os.path.dirname(__file__)))
+sys.path.insert(0, folder)
 __factory = None
 
 
