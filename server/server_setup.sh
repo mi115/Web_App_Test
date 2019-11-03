@@ -69,7 +69,7 @@ apt install nginx
 # CAREFUL HERE. If you are using default, maybe skip this
 rm /etc/nginx/sites-enabled/default
 
-cp /apps/app_repo/first_site/server/first_site.nginx /etc/nginx/sites-enabled/first_site.nginx
+cp /apps/app_repo/server/first_site.nginx /etc/nginx/sites-enabled/first_site.nginx
 update-rc.d nginx enable
 service nginx restart
 
