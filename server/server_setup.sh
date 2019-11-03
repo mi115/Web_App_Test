@@ -57,11 +57,11 @@ cd cd /apps/app_repo/app/ch15_deploy/final/
 pip install -r requirements.txt
 
 # Copy and enable the daemon
-cp /apps/app_repo/app/ch15_deploy/final/server/pypi.service /etc/systemd/system/pypi.service
+cp /apps/app_repo/server/first_site.service /etc/systemd/system/firsy_site.service
 
-systemctl start pypi
-systemctl status pypi
-systemctl enable pypi
+systemctl start firsy_site
+systemctl status firsy_site
+systemctl enable firsy_site
 
 # Setup the public facing server (NGINX)
 apt install nginx
