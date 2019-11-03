@@ -7,9 +7,9 @@ from first_site.infrastructure.view_modifiers import response
 import first_site.services.user_service as user_service
 import first_site.infrastructure.cookie_auth as cookie_auth
 from first_site.infrastructure import request_dict
-from viewmodels.account.index_viewmodel import IndexViewModel
-from viewmodels.account.login_viewmodel import LoginViewModel
-from viewmodels.account.register_viewmodel import RegisterViewModel
+from first_site.viewmodels.account.index_viewmodel import IndexViewModel
+from first_site.viewmodels.account.login_viewmodel import LoginViewModel
+from first_site.viewmodels.account.register_viewmodel import RegisterViewModel
 
 blueprint = flask.Blueprint('account', __name__, template_folder='templates')
 

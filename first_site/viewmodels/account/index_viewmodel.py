@@ -1,5 +1,5 @@
-from services import user_service
-from viewmodels.shared.viewmodelbase import ViewModelBase
+from first_site.services import user_service
+from first_site.viewmodels.shared.viewmodelbase import ViewModelBase
 
 
 class IndexViewModel(ViewModelBase):

@@ -1,6 +1,6 @@
 import flask
 
-from infrastructure.view_modifiers import response
+from first_site.infrastructure.view_modifiers import response
 import first_site.services.cms_service as cms_service
 
 blueprint = flask.Blueprint('cms', __name__, template_folder='templates')

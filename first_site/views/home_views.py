@@ -1,9 +1,9 @@
 import flask
 
-import infrastructure.cookie_auth as cookie_auth
-from infrastructure.view_modifiers import response
-from services import package_service
-from services import user_service
+import first_site.infrastructure.cookie_auth as cookie_auth
+from first_site.infrastructure.view_modifiers import response
+from first_site.services import package_service
+from first_site.services import user_service
 
 blueprint = flask.Blueprint('home', __name__, template_folder='templates')
 
